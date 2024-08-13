@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    .card {
+        width: 1000px;
+        height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  box-shadow:  0px 4px 9.1px 0px rgba(0, 0, 0, 0.25);
+}
+.red-btn {
+  width: 300px;
+  height: 150px;
+  margin: 15px;
+  background: rgb(255, 0, 0);
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  color: rgb(22, 21, 21);
+  border: none;
+  border-radius: 0.625em;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.blue-btn {
+  width: 300px;
+  height: 150px;
+  margin: 15px;
+  background: rgb(0, 8, 144);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 8, 144, 1) 0%,
+    rgba(16, 0, 255, 1) 22%,
+    rgba(86, 255, 247, 1) 100%
+  );
+  color: white;
+  border: none;
+  border-radius: 0.625em;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.worker-btn {
+  width: 300px;
+  height: 150px;
+  margin: 15px;
+  background: rgb(32, 116, 31);
+  background: linear-gradient(
+    90deg,
+    rgb(36, 234, 14) 0%,
+    rgb(157, 195, 22) 22%,
+    rgb(158, 209, 17) 100%
+  );
+  color: white;
+  border: none;
+  border-radius: 0.625em;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.worker-btn a{
+    text-decoration: none;
+    color: white;
+}
+.red-btn a{
+    text-decoration: none;
+    color: white;
+}
+.blue-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+button :hover {
+  color: rgb(0, 0, 0);
+}
+
+button:after {
+  content: "";
+  background: rgb(212, 207, 207);
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+button:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.heading{
+    text-align: center;
+}
+.heading h3{
+    font-size: 2.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+}
+.headspan{
+    color: blueviolet;
+}
+.heading p{
+    font-size: 1.3rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+.adminreg a{
+  font-size: 1.2rem;
+}
+</style>
+<body>
+    <div class="main">
+        <div class="heading" >
+            <h3> <span class="headspan" >Welcome</span> to the Asset Manager</h3>
+            <p>Your one-stop solution for managing assets and repairs efficiently.</p>
+        </div>
+        <div class="card">
+            <button class="red-btn"><a href="Register.php">Register</a></button>
+            <button class="blue-btn"><a href="Login.php">Login</a></button>
+            <button class="worker-btn" ><a href="Worker_login.php">Worker</a></button>
+            <div class="adminreg">
+              <h2 class="register_button"><a href="Admin_login.php">Admin? Login here</a></h2>
+            </div>
+          </div>
+    </div> 
+</body>
+</html>
+
